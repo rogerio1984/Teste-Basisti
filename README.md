@@ -17,9 +17,8 @@ Criei um repositório para cada entidade do banco de dados.
 Observações:
 1 - A tabela definida como Assunto no documento utiliza a pk com inicial minúscula. Criei maiúscula para seguir o padrão da base de dados.
 
-=========================================================================================================
-                                        ANGULAR
-=========================================================================================================
+SOBRE ANGULAR:
+
 # AdminTool
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
