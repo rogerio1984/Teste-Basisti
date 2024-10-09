@@ -1,0 +1,26 @@
+  
+  <form [formGroup]="autorForm" (ngSubmit)="onSubmit()">
+    @if(isEdit){
+      <h4 class="titulo">Editar Atuor</h4>
+    }@else {
+    <h4 class="titulo">Novo Autor</h4>}
+    <div class="form-group col-sm-12">
+      <mat-form-field class="col-sm-4">
+         <mat-label>Nome</mat-label>
+        <input type="text" matInput placeholder="Nome" formControlName="nome" class="form-control">
+        <mat-hint *ngIf="autorForm.controls.nome.invalid">*Campo Obrigatório (Máx 40 carac)</mat-hint>
+      </mat-form-field>
+    </div>
+
+
+    <div class="row col-sm-12">
+      <div class="col-sm-2">
+      @if (isEdit) {
+      <button mat-raised-button color="primary" class="col-sm-12" [disabled]="!autorForm.valid">Atualizar</button>
+      }@else {
+      <button mat-raised-button color="primary" class="col-sm-12" [disabled]="!autorForm.valid" type="submit">Salvar</button>
+      }
+      </div>
+    </div>
+  </form>
+<!-- <app-data></app-data> -->

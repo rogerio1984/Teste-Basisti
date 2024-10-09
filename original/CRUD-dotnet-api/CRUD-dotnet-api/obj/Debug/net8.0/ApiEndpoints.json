@@ -1,0 +1,249 @@
+[
+  {
+    "ContainingType": "Basisti_Client.Controllers.AssuntoController",
+    "Method": "AddAssunto",
+    "RelativePath": "api/Assunto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Basisti_Client.Model.Assunto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basisti_Client.Controllers.AssuntoController",
+    "Method": "GetAllAssuntos",
+    "RelativePath": "api/Assunto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basisti_Client.Controllers.AssuntoController",
+    "Method": "GetAssuntoById",
+    "RelativePath": "api/Assunto/{codAs}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codAs",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basisti_Client.Controllers.AssuntoController",
+    "Method": "DeleteAssunto",
+    "RelativePath": "api/Assunto/{codAs}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codAs",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basisti_Client.Controllers.AssuntoController",
+    "Method": "UpdateAssunto",
+    "RelativePath": "api/Assunto/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "Basisti_Client.Model.Assunto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basisti_Client.Controllers.autorController",
+    "Method": "AddAutor",
+    "RelativePath": "api/autor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Basisti_Client.Model.Autor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basisti_Client.Controllers.autorController",
+    "Method": "GetAllAutores",
+    "RelativePath": "api/autor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basisti_Client.Controllers.autorController",
+    "Method": "DeleteAutor",
+    "RelativePath": "api/autor/{codAu}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codAu",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basisti_Client.Controllers.autorController",
+    "Method": "GetAutorById",
+    "RelativePath": "api/autor/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basisti_Client.Controllers.autorController",
+    "Method": "Updateautor",
+    "RelativePath": "api/autor/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "Basisti_Client.Model.Autor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basisti_Client.Controllers.autorController",
+    "Method": "GetReport",
+    "RelativePath": "api/autor/GetReport",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basisti_Client.Controllers.LivroController",
+    "Method": "AddLivro",
+    "RelativePath": "api/Livro",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Basisti_Client.Model.Livro",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basisti_Client.Controllers.LivroController",
+    "Method": "GetAllLivros",
+    "RelativePath": "api/Livro",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basisti_Client.Controllers.LivroController",
+    "Method": "GetLivroById",
+    "RelativePath": "api/Livro/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basisti_Client.Controllers.LivroController",
+    "Method": "DeleteLivro",
+    "RelativePath": "api/Livro/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basisti_Client.Controllers.LivroController",
+    "Method": "UpdateLivro",
+    "RelativePath": "api/Livro/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "Basisti_Client.Model.Livro",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

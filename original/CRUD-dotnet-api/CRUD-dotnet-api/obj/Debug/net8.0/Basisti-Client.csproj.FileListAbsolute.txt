@@ -1,0 +1,7 @@
+C:\Trabalho\Pessoal\Teste Basisti\original\CRUD-dotnet-api\CRUD-dotnet-api\obj\Debug\net8.0\Basisti-Client.csproj.AssemblyReference.cache
+C:\Trabalho\Pessoal\Teste Basisti\original\CRUD-dotnet-api\CRUD-dotnet-api\obj\Debug\net8.0\Basisti-Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Trabalho\Pessoal\Teste Basisti\original\CRUD-dotnet-api\CRUD-dotnet-api\obj\Debug\net8.0\Basisti-Client.AssemblyInfoInputs.cache
+C:\Trabalho\Pessoal\Teste Basisti\original\CRUD-dotnet-api\CRUD-dotnet-api\obj\Debug\net8.0\Basisti-Client.AssemblyInfo.cs
+C:\Trabalho\Pessoal\Teste Basisti\original\CRUD-dotnet-api\CRUD-dotnet-api\obj\Debug\net8.0\Basisti-Client.csproj.CoreCompileInputs.cache
+C:\Trabalho\Pessoal\Teste Basisti\original\CRUD-dotnet-api\CRUD-dotnet-api\obj\Debug\net8.0\Basisti-Client.MvcApplicationPartsAssemblyInfo.cs
+C:\Trabalho\Pessoal\Teste Basisti\original\CRUD-dotnet-api\CRUD-dotnet-api\obj\Debug\net8.0\Basisti-Client.MvcApplicationPartsAssemblyInfo.cache

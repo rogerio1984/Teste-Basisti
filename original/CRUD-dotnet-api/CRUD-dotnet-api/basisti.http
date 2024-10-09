@@ -1,0 +1,6 @@
+@basisti_HostAddress = http://localhost:5166
+
+GET {{basisti_HostAddress}}/livros/
+Accept: application/json
+
+###

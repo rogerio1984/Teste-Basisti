@@ -1,0 +1,89 @@
+@if (LivroList && LivroList.length>0) {
+<div class="mat-elevation-z8 w-full ">
+  <div class="flex justify-end p-8 text-right" style="padding: 15px; text-align: right;">
+    <button mat-raised-button color="primary" routerLink="/create-livro"> Novo Livro</button>
+  </div>
+  <div class="titulo">Livros:</div>
+  <!-- <mat-form-field>
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Filter">
+  </mat-form-field> -->
+  <div class="divTable col-sm-12">
+  <table mat-table [dataSource]="LivroList" class="col-sm-12">
+  
+   <!---  Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- CodL Column -->
+    <ng-container matColumnDef="codl">
+      <th mat-header-cell *matHeaderCellDef  class="col-sm-1"> CodL </th>
+      <td mat-cell *matCellDef="let element"> {{element.codl}} </td>
+      <mat-footer-cell *matFooterCellDef mat-table-filter-trigger>CodL</mat-footer-cell>
+    </ng-container>
+
+    <!-- Título Column -->
+    <ng-container matColumnDef="titulo">
+      <th mat-header-cell *matHeaderCellDef  class="col-sm-2"> Título </th>
+      <td mat-cell *matCellDef="let element"> {{element.titulo}} </td>
+      <mat-footer-cell *matFooterCellDef mat-table-filter-trigger>Título</mat-footer-cell>
+    </ng-container>
+    
+    <!-- Editora Column -->
+    <ng-container matColumnDef="editora"  class="col-sm-1">
+      <th mat-header-cell *matHeaderCellDef> Editora </th>
+      <td mat-cell *matCellDef="let element"> {{element.editora}} </td>
+      <mat-footer-cell *matFooterCellDef mat-table-filter-trigger>Editora</mat-footer-cell>
+    </ng-container>
+
+    
+    <!-- Edição Column -->
+    <ng-container matColumnDef="edicao"  class="col-sm-1">
+      <th mat-header-cell *matHeaderCellDef> Edição </th>
+      <td mat-cell *matCellDef="let element"> {{element.edicao}} </td>
+      <mat-footer-cell *matFooterCellDef mat-table-filter-trigger>Edição</mat-footer-cell>
+    </ng-container>
+
+    <!-- Autores Column -->
+    <ng-container matColumnDef="autoresStr">
+      <th mat-header-cell *matHeaderCellDef  class="col-sm-1"> Autores </th>
+      <td mat-cell *matCellDef="let element"> {{element.autoresStr}} </td>
+      <mat-footer-cell *matFooterCellDef mat-table-filter-trigger>Autores</mat-footer-cell>
+    </ng-container>
+
+    <!-- Assuntos Column -->
+    <ng-container matColumnDef="assuntosStr">
+      <th mat-header-cell *matHeaderCellDef  class="col-sm-2"> Assuntos </th>
+      <td mat-cell *matCellDef="let element"> {{element.assuntosStr}} </td>
+      <mat-footer-cell *matFooterCellDef mat-table-filter-trigger>Assuntos</mat-footer-cell>
+    </ng-container>
+    
+    
+    <!-- Ano Publicação Column -->
+    <ng-container matColumnDef="anoPublicacao">
+      <th mat-header-cell *matHeaderCellDef  class="col-sm-1"> Ano de Publicação </th>
+      <td mat-cell *matCellDef="let element"> {{element.anoPublicacao}} </td>
+      <mat-footer-cell *matFooterCellDef mat-table-filter-trigger>Ano de Publicação</mat-footer-cell>
+    </ng-container>
+     <!-- Valores Column -->
+     <ng-container matColumnDef="valoresStr">
+      <th mat-header-cell *matHeaderCellDef  class="col-sm-2"> Valores </th>
+      <td mat-cell *matCellDef="let element"> {{element.valoresStr}} </td>
+      <mat-footer-cell *matFooterCellDef mat-table-filter-trigger>Valores</mat-footer-cell>
+    </ng-container>
+
+    <!-- Edit Column -->
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef  class="col-sm-2"> Ação </th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-raised-button color="primary" (click)="editLivro(element.codl)">Edit</button>&nbsp;&nbsp;&nbsp;
+        <button mat-raised-button color="warn" (click)="DeleteLivro(element.codl)">Delete</button>
+      </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
+</div>}
+<!--  -->

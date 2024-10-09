@@ -1,0 +1,25 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th>Autor</th>
+        <th>Título</th>
+        <th>Assuntos</th>
+        <th>Valores</th>
+        <th>Editora</th>
+        <th>Edição</th>
+        <th>Ano de Publicação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of relatorioList; let i = index">
+        <td *ngIf="i === 0 || relatorioList[i-1].autor !== item.autor" 
+        [attr.rowspan]="getAutorCount(item.autor)">{{item.autor}}</td>     
+        <td>{{ item.titulo }}</td>
+        <td>{{ item.assuntos }}</td>
+        <td>{{ item.valores }}</td>
+        <td>{{ item.editora }}</td>
+        <td>{{ item.edicao }}</td>
+        <td>{{ item.anoPublicacao }}</td>
+      </tr>
+    </tbody>
+  </table>

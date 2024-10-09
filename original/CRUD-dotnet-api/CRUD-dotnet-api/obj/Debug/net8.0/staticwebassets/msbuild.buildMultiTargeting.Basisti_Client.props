@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Basisti_Client.props" />
+</Project>

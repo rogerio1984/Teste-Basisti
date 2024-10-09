@@ -1,0 +1,28 @@
+<!-- <h3>CRUD Operation</h3> -->
+<mat-toolbar color="primary">
+  <button mat-icon-button class="mr-8" routerLink="/">
+    <mat-icon>home</mat-icon>
+  </button>
+  <span>BASISTI</span>
+  <span class="example-spacer"></span>
+  <div class="flex justify-end p-8 text-right" style="padding: 15px; text-align: right;">
+    <button mat-raised-button color="primary" routerLink="/autor-list"> Autores </button>
+  </div>
+  <div class="flex justify-end p-8 text-right" style="padding: 15px; text-align: right;">
+    <button mat-raised-button color="primary" routerLink="/assunto-list"> Assuntos </button>
+  </div>  
+  <div class="flex justify-end p-8 text-right" style="padding: 15px; text-align: right;">
+    <button mat-raised-button color="primary" routerLink="/livro-list"> Livros </button>
+  </div>
+  <!-- <button mat-icon-button class="example-icon favorite-icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" >
+    <mat-icon>share</mat-icon>
+  </button> -->
+</mat-toolbar>
+<div class="flex justify-center">
+
+
+<router-outlet></router-outlet>
+</div>

@@ -1,0 +1,32 @@
+Passo 1 :
+
+Baixei um template de angular e netcore no git
+link: https://github.com/emonney/QuickApp
+
+Passo 2 : 
+
+Configurei a aplicação para apontar para o banco de dados local da minha máquina.
+
+Rodei o comando "dotnet ef database update"  para criar as tabelas informadas no migrate.
+
+Passo 3 :
+
+Criei pasta Model para separar as entidades dos repositorios e seguir um padrão mais eficiente de arquitetura.
+
+Passo 4:
+
+Adaptei o migrate para representar as tabelas sugeridas no desafio
+Criei controller para cada entidade ser representada na aplicação.
+Criei uma entidade para cada tabela do banco de dados.
+Criei um repositório para cada entidade do banco de dados.
+
+Passo migrate
+
+1 - criar a base de dados
+2 - dotnet ef database update
+
+
+Observações:
+
+1 - A tabela definida como Assunto no documento utiliza a pk com inicial minúscula. Criei maiúscula para seguir o padrão da base de dados.
+

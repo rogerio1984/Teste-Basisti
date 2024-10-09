@@ -1,0 +1,46 @@
+@if (AssuntoList && AssuntoList.length>0) {
+<div class="mat-elevation-z8 w-full ">
+  <div class="flex justify-end p-8 text-right" style="padding: 15px; text-align: right;">
+    <button mat-raised-button color="primary" routerLink="/create-assunto"> Novo Assunto</button>
+  </div>
+  <div class="titulo">Assuntos:</div>
+  <!-- <mat-form-field>
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Filter">
+  </mat-form-field> -->
+  <div  class="divTable col-sm-12">
+  <table mat-table [dataSource]="AssuntoList">
+
+   <!---  Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- CodAu Column -->
+    <ng-container matColumnDef="codAs">
+      <th mat-header-cell *matHeaderCellDef  class="col-sm-1"> CodAs </th>
+      <td mat-cell *matCellDef="let element"> {{element.codAs}} </td>
+      <mat-footer-cell *matFooterCellDef mat-table-filter-trigger>CodAs</mat-footer-cell>
+    </ng-container>
+
+    <!-- Nome Column -->
+    <ng-container matColumnDef="descricao">
+      <th mat-header-cell *matHeaderCellDef  class="col-sm-9"> Descrição </th>
+      <td mat-cell *matCellDef="let element"> {{element.descricao}} </td>
+      <mat-footer-cell *matFooterCellDef mat-table-filter-trigger>Descrição</mat-footer-cell>
+    </ng-container>
+
+    <!-- Edit Column -->
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef  class="col-sm-2"> Ação </th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-raised-button color="primary" (click)="editAssunto(element.codAs)">Edit</button>&nbsp;&nbsp;&nbsp;
+        <button mat-raised-button color="warn" (click)="DeleteAssunto(element.codAs)">Delete</button>
+      </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
+</div>}
+<!--  -->

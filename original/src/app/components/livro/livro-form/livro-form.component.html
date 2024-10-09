@@ -1,0 +1,80 @@
+  
+  <form [formGroup]="livroForm" (ngSubmit)="onSubmit()">
+    @if(isEdit){
+      <div class="titulo">Alterar</div>
+    }@else {
+      <div class="titulo">Novo Livro</div>}
+
+    @if(!isEdit){ 
+     <div class="row col-sm-12">
+      <div class="col-sm-4">
+      <mat-form-field class="col-sm-12">
+        <mat-label>Código</mat-label>
+        <input type="text" matInput type="number" placeholder="Código" formControlName="codl" class="form-control">        
+          <mat-hint *ngIf="livroForm.controls.codl.invalid">*Campo Obrigatório (Máx 10 carac)</mat-hint>         
+      </mat-form-field>
+      </div>
+      <div class="col-sm-4">
+        <mat-form-field class="col-sm-12">
+        <mat-label>Título</mat-label> 
+          <input type="text" matInput placeholder="Título" formControlName="titulo" class="form-control">
+          <mat-hint *ngIf="livroForm.controls.titulo.invalid">*Campo Obrigatório (Máx 40 carac)</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+     }
+    <div class="row col-sm-12">     
+      <div class="col-sm-4">
+        <mat-form-field class="col-sm-12">
+          <mat-label>Editora</mat-label> 
+          <input type="text" matInput placeholder="Editora" formControlName="editora" class="form-control col-sm-12">
+                <mat-hint *ngIf="livroForm.controls.editora.invalid">*Campo Obrigatório (Máx 40 carac)</mat-hint>
+        </mat-form-field>
+      </div> 
+      <div class="col-sm-4">
+        <mat-form-field class="col-sm-12">
+          <mat-label>Edição</mat-label> 
+          <input type="text" matInput type="number" placeholder="Edição" formControlName="edicao" class="form-control col-sm-12">
+           <mat-hint *ngIf="livroForm.controls.edicao.invalid">*Campo Obrigatório (Máx 2 carac)</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row col-sm-12">
+      <div class="col-sm-4">
+        <mat-form-field class="col-sm-12">
+          <mat-select formControlName="assuntosStr" [(value)]="assuntoSelecionado" class="form-control col-sm-12">
+          <mat-option *ngFor="let assunto of assuntoList" [value]="assunto.codAs.toString()">{{assunto.descricao}}</mat-option>
+          </mat-select>
+          </mat-form-field>
+          <mat-hint *ngIf="livroForm.controls.assuntosStr.invalid">*Campo Obrigatório</mat-hint>
+      </div> 
+      <div class="col-sm-4">
+        <mat-form-field class="col-sm-12">
+          <mat-select formControlName="autoresStr" [(value)]="autorSelecionado" class="form-control col-sm-12">
+          <mat-option *ngFor="let autor of autorList" [value]="autor.codAu.toString()">{{autor.nome}}</mat-option>
+          </mat-select>
+          </mat-form-field>
+          <mat-hint *ngIf="livroForm.controls.autoresStr.invalid">*Campo Obrigatório</mat-hint>
+      </div>
+    </div>   
+    <div class="row col-sm-12">
+      <div class="col-sm-4">
+        <mat-form-field class="col-sm-12">
+          <mat-label>Ano da Publicação</mat-label>
+          <input type="text" matInput type="number" placeholder="Ano da Publicação" formControlName="anoPublicacao" class="form-control">
+                <mat-hint *ngIf="livroForm.controls.anoPublicacao.invalid">*Campo Obrigatório (4 carac)</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row col-sm-12">
+      <div class="col-sm-2">
+      @if (isEdit) {
+      <button mat-raised-button color="primary" class="col-sm-12" [disabled]="!livroForm.valid">Atualizar</button>
+      }@else {
+      <button mat-raised-button color="primary" class="col-sm-12" [disabled]="!livroForm.valid" type="submit">Salvar</button>
+      }
+      </div>
+    </div>
+  </form>
+<!-- <app-data></app-data> -->
