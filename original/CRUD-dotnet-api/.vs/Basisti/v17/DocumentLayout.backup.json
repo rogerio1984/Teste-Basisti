@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Trabalho\\Pessoal\\Teste Basisti\\original\\CRUD-dotnet-api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9F4BFD79-D31A-4585-AC94-E775A2AC71E2}|Basisti_Client.Tests\\Basisti_Client.Tests.csproj|c:\\trabalho\\pessoal\\teste basisti\\original\\crud-dotnet-api\\basisti_client.tests\\autortest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4BFD79-D31A-4585-AC94-E775A2AC71E2}|Basisti_Client.Tests\\Basisti_Client.Tests.csproj|solutionrelative:basisti_client.tests\\autortest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C1C5EC2-DB5A-40B3-9C12-3412F3B43D8F}|CRUD-dotnet-api\\Basisti_Client.csproj|c:\\trabalho\\pessoal\\teste basisti\\original\\crud-dotnet-api\\crud-dotnet-api\\model\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C1C5EC2-DB5A-40B3-9C12-3412F3B43D8F}|CRUD-dotnet-api\\Basisti_Client.csproj|solutionrelative:crud-dotnet-api\\model\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6C1C5EC2-DB5A-40B3-9C12-3412F3B43D8F}|CRUD-dotnet-api\\Basisti_Client.csproj|c:\\trabalho\\pessoal\\teste basisti\\original\\crud-dotnet-api\\crud-dotnet-api\\controllers\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C1C5EC2-DB5A-40B3-9C12-3412F3B43D8F}|CRUD-dotnet-api\\Basisti_Client.csproj|solutionrelative:crud-dotnet-api\\controllers\\autorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,15 +34,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Autor.cs",
+              "DocumentMoniker": "C:\\Trabalho\\Pessoal\\Teste Basisti\\original\\CRUD-dotnet-api\\CRUD-dotnet-api\\Model\\Autor.cs",
+              "RelativeDocumentMoniker": "CRUD-dotnet-api\\Model\\Autor.cs",
+              "ToolTip": "C:\\Trabalho\\Pessoal\\Teste Basisti\\original\\CRUD-dotnet-api\\CRUD-dotnet-api\\Model\\Autor.cs",
+              "RelativeToolTip": "CRUD-dotnet-api\\Model\\Autor.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T13:26:26.25Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "AutorTest.cs",
+              "DocumentMoniker": "C:\\Trabalho\\Pessoal\\Teste Basisti\\original\\CRUD-dotnet-api\\Basisti_Client.Tests\\AutorTest.cs",
+              "RelativeDocumentMoniker": "Basisti_Client.Tests\\AutorTest.cs",
+              "ToolTip": "C:\\Trabalho\\Pessoal\\Teste Basisti\\original\\CRUD-dotnet-api\\Basisti_Client.Tests\\AutorTest.cs",
+              "RelativeToolTip": "Basisti_Client.Tests\\AutorTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T13:23:55.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Trabalho\\Pessoal\\Teste Basisti\\original\\CRUD-dotnet-api\\CRUD-dotnet-api\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "CRUD-dotnet-api\\Data\\AppDbContext.cs",
@@ -42,12 +76,11 @@
               "RelativeToolTip": "CRUD-dotnet-api\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAA/wBoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T20:20:00.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T20:20:00.239Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Vw_AutorReport.cs",
               "DocumentMoniker": "C:\\Trabalho\\Pessoal\\Teste Basisti\\original\\CRUD-dotnet-api\\CRUD-dotnet-api\\Model\\Vw_AutorReport.cs",
               "RelativeDocumentMoniker": "CRUD-dotnet-api\\Model\\Vw_AutorReport.cs",
@@ -55,12 +88,11 @@
               "RelativeToolTip": "CRUD-dotnet-api\\Model\\Vw_AutorReport.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T20:11:36.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T20:11:36.037Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AutorRepository.cs",
               "DocumentMoniker": "C:\\Trabalho\\Pessoal\\Teste Basisti\\original\\CRUD-dotnet-api\\CRUD-dotnet-api\\Data\\AutorRepository.cs",
               "RelativeDocumentMoniker": "CRUD-dotnet-api\\Data\\AutorRepository.cs",
@@ -68,18 +100,17 @@
               "RelativeToolTip": "CRUD-dotnet-api\\Data\\AutorRepository.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T20:10:44.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T20:10:44.019Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AutorController.cs",
               "DocumentMoniker": "C:\\Trabalho\\Pessoal\\Teste Basisti\\original\\CRUD-dotnet-api\\CRUD-dotnet-api\\Controllers\\AutorController.cs",
               "RelativeDocumentMoniker": "CRUD-dotnet-api\\Controllers\\AutorController.cs",
               "ToolTip": "C:\\Trabalho\\Pessoal\\Teste Basisti\\original\\CRUD-dotnet-api\\CRUD-dotnet-api\\Controllers\\AutorController.cs",
               "RelativeToolTip": "CRUD-dotnet-api\\Controllers\\AutorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T20:09:51.714Z",
               "EditorCaption": ""

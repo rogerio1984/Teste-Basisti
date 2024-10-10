@@ -7,7 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { HttpService } from '../../../services/http.service';
 import { ToastrService } from 'ngx-toastr';
 
-import {
+import {  
   FormBuilder,
   FormsModule,
   Validators,
@@ -30,7 +30,7 @@ import { DataComponent } from '../../data/data.component';
     MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterLink
+    RouterLink,
   ],
   templateUrl: './livro-form.component.html',
   styleUrl: './livro-form.component.css',
@@ -66,6 +66,7 @@ export class LivroFormComponent {
 
   codlEdit: number = 0;
   isEdit = false;
+  
   ngOnInit() {
     this.codlEdit = this.route.snapshot.params['codl'];
     if (this.codlEdit) {
@@ -76,15 +77,15 @@ export class LivroFormComponent {
         this.assuntoSelecionado = result.assuntosStr;
         this.autorSelecionado = result.autoresStr;
       });
-
      
     }
-
+    
     this.httpService.getAllAssuntos().subscribe((data) => {     
       console.log('retorno');     
       this.assuntoList = data; 
       console.log(data);     
     });
+
     this.httpService.getAllAutores().subscribe((data) => {     
       console.log('retorno');     
       this.autorList = data; 

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34902.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basisti_Client", "CRUD-dotnet-api\Basisti_Client.csproj", "{6C1C5EC2-DB5A-40B3-9C12-3412F3B43D8F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basisti_Client.Tests", "Basisti_Client.Tests\Basisti_Client.Tests.csproj", "{9F4BFD79-D31A-4585-AC94-E775A2AC71E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6C1C5EC2-DB5A-40B3-9C12-3412F3B43D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C1C5EC2-DB5A-40B3-9C12-3412F3B43D8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C1C5EC2-DB5A-40B3-9C12-3412F3B43D8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F4BFD79-D31A-4585-AC94-E775A2AC71E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F4BFD79-D31A-4585-AC94-E775A2AC71E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F4BFD79-D31A-4585-AC94-E775A2AC71E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F4BFD79-D31A-4585-AC94-E775A2AC71E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
