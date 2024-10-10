@@ -8,7 +8,7 @@
     <div class="form-group col-sm-12">
       <mat-form-field class="col-sm-4">     
         <mat-label>Descrição</mat-label>
-        <input type="text" matInput placeholder="Descrição" formControlName="descricao" class="form-control">
+        <input type="text" matInput placeholder="Descrição" maxlength="20" formControlName="descricao" class="form-control">
         <mat-hint *ngIf="assuntoForm.controls.descricao.invalid">*Campo Obrigatório (Máx 20 carac)</mat-hint>
       </mat-form-field>
     </div>

@@ -8,7 +8,6 @@ public class AutorTest
   [Fact]
   public void ValidarCamposSemNome()
   {
-    // Arrange
     Autor autor = new Autor { CodAu = 12, Nome = "" };
 
     Assert.NotEmpty(autor.Nome);
@@ -16,7 +15,6 @@ public class AutorTest
   [Fact]
   public void ValidarCamposComNome()
   {
-    // Arrange
     Autor autor = new Autor { CodAu = 12, Nome = "teste" };
 
     Assert.NotEmpty(autor.Nome);
@@ -25,7 +23,6 @@ public class AutorTest
   [Fact]
   public void ValidarCamposSemCodAu()
   {
-    // Arrange
     Autor autor = new Autor { CodAu = 0, Nome = "teste" };
 
     Assert.True(autor.CodAu > 0);
@@ -34,7 +31,6 @@ public class AutorTest
   [Fact]
   public void ValidarCamposComCodAu()
   {
-    // Arrange
     Autor autor = new Autor { CodAu = 12, Nome = "teste" };
 
     Assert.True(autor.CodAu > 0);

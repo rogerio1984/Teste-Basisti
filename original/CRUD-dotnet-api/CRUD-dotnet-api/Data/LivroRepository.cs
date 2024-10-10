@@ -23,6 +23,15 @@ namespace Basisti_Client.Data
       {
         await _appDbContext.Set<Livro>().AddAsync(livro);
         await _appDbContext.SaveChangesAsync();
+
+        Livro_Assunto livro_Assunto = new Livro_Assunto() { Codl = livro.Codl, CodAs = Convert.ToInt32(livro.AssuntosStr) };
+
+        await _livroAssuntoRepository.AddLivroAssuntoAsync(livro_Assunto);
+
+        Livro_Autor livro_autor = new Livro_Autor() { Codl = livro.Codl, CodAu = Convert.ToInt32(livro.AutoresStr) };
+
+        await _livroAutorRepository.AddLivroAutorAsync(livro_autor);
+
       }
       catch (Exception ex)
       {

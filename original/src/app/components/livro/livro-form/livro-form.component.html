@@ -10,14 +10,14 @@
       <div class="col-sm-4">
       <mat-form-field class="col-sm-12">
         <mat-label>Código</mat-label>
-        <input type="text" matInput type="number" placeholder="Código" formControlName="codl" class="form-control">        
+        <input (keypress)="onKeyPress($event,10)" matInput type="number" placeholder="Código" formControlName="codl" class="form-control">        
           <mat-hint *ngIf="livroForm.controls.codl.invalid">*Campo Obrigatório (Máx 10 carac)</mat-hint>         
       </mat-form-field>
       </div>
       <div class="col-sm-4">
         <mat-form-field class="col-sm-12">
         <mat-label>Título</mat-label> 
-          <input type="text" matInput placeholder="Título" formControlName="titulo" class="form-control">
+          <input type="text"  maxlength="40" matInput placeholder="Título" formControlName="titulo" class="form-control">
           <mat-hint *ngIf="livroForm.controls.titulo.invalid">*Campo Obrigatório (Máx 40 carac)</mat-hint>
         </mat-form-field>
       </div>
@@ -27,14 +27,14 @@
       <div class="col-sm-4">
         <mat-form-field class="col-sm-12">
           <mat-label>Editora</mat-label> 
-          <input type="text" matInput placeholder="Editora" formControlName="editora" class="form-control col-sm-12">
+          <input type="text" maxlength="40" matInput placeholder="Editora" formControlName="editora" class="form-control col-sm-12">
                 <mat-hint *ngIf="livroForm.controls.editora.invalid">*Campo Obrigatório (Máx 40 carac)</mat-hint>
         </mat-form-field>
       </div> 
       <div class="col-sm-4">
         <mat-form-field class="col-sm-12">
           <mat-label>Edição</mat-label> 
-          <input type="text" matInput type="number" placeholder="Edição" formControlName="edicao" class="form-control col-sm-12">
+          <input  (keypress)="onKeyPress($event,2)" matInput type="number" placeholder="Edição" formControlName="edicao" class="form-control col-sm-12">
            <mat-hint *ngIf="livroForm.controls.edicao.invalid">*Campo Obrigatório (Máx 2 carac)</mat-hint>
         </mat-form-field>
       </div>
@@ -62,7 +62,7 @@
       <div class="col-sm-4">
         <mat-form-field class="col-sm-12">
           <mat-label>Ano da Publicação</mat-label>
-          <input type="text" matInput type="number" placeholder="Ano da Publicação" formControlName="anoPublicacao" class="form-control">
+          <input (keypress)="onKeyPress($event,4)" matInput type="text"  placeholder="Ano da Publicação" formControlName="anoPublicacao" class="form-control">
                 <mat-hint *ngIf="livroForm.controls.anoPublicacao.invalid">*Campo Obrigatório (4 carac)</mat-hint>
         </mat-form-field>
       </div>

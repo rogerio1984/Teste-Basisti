@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Basisti_Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+786d42336252b076d3978b2d2abfecd570ccf59d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86bccab6782bf6b383e7e669fb41747d01007a05")]
 [assembly: System.Reflection.AssemblyProductAttribute("Basisti_Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Basisti_Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

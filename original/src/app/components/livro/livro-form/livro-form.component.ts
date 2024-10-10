@@ -74,8 +74,6 @@ export class LivroFormComponent {
       this.httpService.getLivro(this.codlEdit).subscribe((result) => {
         console.log(result);          
         this.livroForm.patchValue(result);
-        this.assuntoSelecionado = result.assuntosStr;
-        this.autorSelecionado = result.autoresStr;
       });
      
     }
@@ -91,6 +89,13 @@ export class LivroFormComponent {
       this.autorList = data; 
       console.log(data);     
     });
+  }
+
+  onKeyPress(event: KeyboardEvent, limite: number) {
+    const input = event.target as HTMLInputElement;
+    if (input.value.length >= limite && !['Backspace', 'ArrowLeft', 'ArrowRight', 'Delete'].includes(event.key)) {
+      event.preventDefault();
+    }
   }
 
   onSubmit() {
